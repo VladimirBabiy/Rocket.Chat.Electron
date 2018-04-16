@@ -18,7 +18,8 @@ sidebar.on('badge-setted', function () {
 });
 
 export const start = function () {
-    const defaultInstance = 'https://open.rocket.chat';
+     //const defaultInstance = 'https://open.rocket.chat';
+      const defaultInstance = 'https://c.voip.review';
 
     // connection check
     function online () {
@@ -40,7 +41,7 @@ export const start = function () {
     const hostField = form.querySelector('[name="host"]');
     const button = form.querySelector('[type="submit"]');
     const invalidUrl = form.querySelector('#invalidUrl');
-
+    
     window.addEventListener('load', function () {
         hostField.focus();
     });
@@ -163,7 +164,13 @@ export const start = function () {
         webview.showLanding();
     });
 
-    servers.restoreActive();
+    if(servers.hostExists()){
+      servers.restoreActive(); 
+    }
+    else{
+      hostField.value = defaultInstance;
+      submit();
+    }
 };
 
 window.addEventListener('focus', function () {

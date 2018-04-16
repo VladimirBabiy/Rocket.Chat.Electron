@@ -168,6 +168,12 @@ class Servers extends EventEmitter {
         return !!hosts[hostUrl];
     }
 
+    hostExists () {
+        const hosts = this.hosts;
+
+        return hosts.length > 0;
+    }
+
     addHost (hostUrl) {
         const hosts = this.hosts;
 
