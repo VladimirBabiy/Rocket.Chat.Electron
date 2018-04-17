@@ -18,8 +18,9 @@ sidebar.on('badge-setted', function () {
 });
 
 export const start = function () {
-     //const defaultInstance = 'https://open.rocket.chat';
-      const defaultInstance = 'https://c.voip.review';
+    //const defaultInstance = 'https://open.rocket.chat';
+    const defaultInstance = 'https://c.voip.review';
+    //const defaultInstance = 'http://localhost:3000/';
 
     // connection check
     function online () {

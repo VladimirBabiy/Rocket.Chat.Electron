@@ -1,11 +1,11 @@
 {
-  "name": "rocketchat",
-  "productName": "Rocket.Chat+",
-  "description": "Rocket.Chat Native Cross-Platform Desktop Application via Electron.",
+  "name": "voip.review",
+  "productName": "voip.review",
+  "description": "voip.review Native Cross-Platform Desktop Application via Electron (Powered by Rocket.Chat)",
   "version": "2.11.0-develop",
-  "author": "Rocket.Chat Support <support@rocket.chat>",
-  "copyright": "© 2018, Rocket.Chat",
-  "homepage": "https://rocket.chat",
+  "author": "DIDWW Support <support@didww.com>",
+  "copyright": "© 2018, DIDWW",
+  "homepage": "https://voip.review",
   "license": "MIT",
   "main": "app/background.js",
   "repository": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/RocketChat/Rocket.Chat.Electron.git"
   },
   "build": {
-    "appId": "chat.rocket",
+    "appId": "voip.review.app",
     "files": [
       "app/**/*",
       "node_modules/**/*",
