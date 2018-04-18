@@ -26,6 +26,7 @@ const macWindowTemplate = [
     {
         label: i18n.__('Add_new_server'),
         accelerator: 'Command+N',
+        visible: false,
         click: function () {
             const mainWindow = remote.getCurrentWindow();
             mainWindow.show();
@@ -54,6 +55,7 @@ const windowTemplate = [
     {
         label: i18n.__('Add_new_server'),
         accelerator: 'Ctrl+N',
+        visible: false,
         click: function () {
             servers.clearActive();
             webview.showLanding();

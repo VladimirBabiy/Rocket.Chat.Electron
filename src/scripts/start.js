@@ -22,6 +22,9 @@ export const start = function () {
     const defaultInstance = 'https://c.voip.review';
     //const defaultInstance = 'http://localhost:3000/';
 
+    //hide sidebar
+    sidebar.hide();
+
     // connection check
     function online () {
         document.body.classList.remove('offline');
@@ -136,7 +139,8 @@ export const start = function () {
 
             url = servers.addHost(url);
             if (url !== false) {
-                sidebar.show();
+                //note: do not show side bar
+                //sidebar.show();
                 servers.setActive(url);
             }
 

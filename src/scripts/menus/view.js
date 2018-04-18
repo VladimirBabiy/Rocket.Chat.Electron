@@ -72,6 +72,7 @@ const viewTemplate = [
     },
     {
         label: i18n.__('Toggle_Server_List'),
+        visible: false,
         click: function () {
             sidebar.toggle();
         }

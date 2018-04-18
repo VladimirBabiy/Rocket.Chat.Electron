@@ -52,7 +52,9 @@ function createMenu () {
 }
 
 function addServer (host, position) {
-    const index = windowMenu.findIndex((i) => i.id === 'server-list-separator');
+    //note: do not show server list
+    /* const index = windowMenu.findIndex((i) => i.id === 'server-list-separator');
+    
     windowMenu[index].visible = true;
 
     const menuItem = {
@@ -69,13 +71,13 @@ function addServer (host, position) {
 
     windowMenu.push(menuItem);
 
-    createMenu();
+    createMenu();*/
 }
 
 function removeServer (server) {
-    const index = windowMenu.findIndex((i) => i.id === server);
+    /*const index = windowMenu.findIndex((i) => i.id === server);
     windowMenu.splice(index, 1);
-    createMenu();
+    createMenu();*/
 }
 
 function autoHideMenu () {

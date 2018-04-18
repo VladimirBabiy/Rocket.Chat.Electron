@@ -13,7 +13,7 @@
     "url": "https://github.com/RocketChat/Rocket.Chat.Electron.git"
   },
   "build": {
-    "appId": "voip.review.app",
+    "appId": "voip.review.mac",
     "files": [
       "app/**/*",
       "node_modules/**/*",
@@ -44,8 +44,8 @@
     },
     "appx": {
       "backgroundColor": "#2f343d",
-      "displayName": "Rocket.Chat",
-      "publisherDisplayName": "Rocket.Chat",
+      "displayName": "voip.review",
+      "publisherDisplayName": "voip.review",
       "languages": [
         "en-US",
         "en-GB",
@@ -55,7 +55,7 @@
     "linux": {
       "desktop": {
         "Categories": "GNOME;GTK;Network;InstantMessaging",
-        "StartupWMClass": "Rocket.Chat+",
+        "StartupWMClass": "voip.review",
         "MimeType": "x-scheme-handler/rocketchat"
       },
       "target": [
